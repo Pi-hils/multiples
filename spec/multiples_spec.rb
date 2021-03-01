@@ -19,7 +19,14 @@ describe Multiples do
   it"8 divides perfectly into the multiple will return the multiple" do
     expect(subject.multiple_of_x(8,200)).to include(8)
   end
+
+  it"8 divides perfectly into the multiple will return the multiple" do
+    expect(subject.multiple_of_x(8,200)).to include(56)
+  end
   
+  it"8 divides perfectly into the multiple will return the multiple" do
+    expect(subject.multiple_of_x(8,200)).to include(64)
+  end
   # it "9 divides perfectly into 9 so will return th multiple" do
   #   expect(subject.multiple_of_9(9)).to eq(9)
   # end
