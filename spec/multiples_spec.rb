@@ -6,8 +6,12 @@ describe Multiples do
     expect(subject.multiple_of_7(7,100)).to include(7)
   end
 
-  it 'if divided perfectly into 7 it returns multiples of 7' do
+  it 'if divided perfectly into 7 it returns multiples of 7 and include 14' do
     expect(subject.multiple_of_7(7,100)).to include(14)
+  end
+
+  it 'if divided perfectly into 7 it returns multiples of 28' do
+    expect(subject.multiple_of_7(7,100)).to include(28)
   end
 
   # it"8 divides perfectly into the multiple will return the multiple" do
