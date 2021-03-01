@@ -1,7 +1,8 @@
 class Multiples
 
-  def multiple_of_7(num,limit)
-    for i in (7..100).step(7) do
+  def multiple_of_x(num,limit)
+
+    for i in (num..limit).step(num) do
        i
     end
   end
