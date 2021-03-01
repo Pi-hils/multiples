@@ -14,9 +14,13 @@ describe Multiples do
     expect(subject.multiple_of_7(7,100)).to include(28)
   end
 
-  # it"8 divides perfectly into the multiple will return the multiple" do
-  #   expect(subject.multiple_of_8(8)).to eq(8)
+  # it 'if it does not divid perfectly into 7, nothing will be outputed' do
+  #   expect{ subject.multiple_of_7([],100) }.to raise_error 'incorrect multiple'
   # end
+
+  it"8 divides perfectly into the multiple will return the multiple" do
+    expect(subject.multiple_of_8(8,200)).to include(8)
+  end
   
   # it "9 divides perfectly into 9 so will return th multiple" do
   #   expect(subject.multiple_of_9(9)).to eq(9)
