@@ -27,7 +27,7 @@ describe Multiples do
   end
 
   it "9 divides perfectly into 9 so will return th multiples" do
-    expect(subject.multiple_of_9(9,300)).to include(9)
+    expect(subject.multiple_of_x(9,300)).to include(9)
   end
 
 end
